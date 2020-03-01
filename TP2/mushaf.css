@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/earlyaccess/lateef.css);
+  /* font-family: 'Lateef', serif; */
+mushaf {
+	background: #F7EBC6;
+	font-weight: bold;
+	font-size: 80px;
+	/*counter-reset: section;*/
+}
+
+sura {
+	display: block;;
+	text-align: center;
+	text-shadow: 3px 2px red;
+	color: #3E2603;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 300px;
+	margin-top: 300px;
+	line-height: 2;
+	font-family: 'Lateef', serif;
+}
+
+b{
+	display: block; 
+	font-size: 200px;
+}
+
+[name]::before{
+	background: #FBF8AF;
+	color: #BDBB69;
+	display: block;
+	font-size: 150px;
+	text-align: center;
+	border:#C4F6F1 solid;
+	margin-bottom: 100px;
+	content: " سورة " attr(name) " " ;
+}
+
+aya:lang(ar) {
+	display: inline-block;
+}
+[id]::after{
+	content: " ( " attr(id) " )" ;
+}
